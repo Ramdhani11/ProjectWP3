@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@448&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-image: url(neww/backk.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% -1100px;
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+}
+nav.black{
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.384);
+}
+nav .logo img{
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .4s;
+}
+nav.black .logo img{
+    top: 0px;
+    height: 70px;
+    width: 70px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+nav ul {
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    transition: .3s;
+}
+nav.black ul{
+    top: 10px;
+}
+nav ul li{
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    background-color:rgb(255, 142, 130);
+    width: 0;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    transition: .4s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Akshar',sans-serif;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+nav.black ul li a{
+    color: rgb(255, 142, 130);
+}
+nav ul li a.active::after{
+    position: absolute;
+    content: '';    
+    width: 100%;
+    background-color:rgb(255, 142, 130);
+    height: 3px;
+    left: 0;
+    top: 21px;
+}
+/* nav.black ul li a{
+    color: rgb(255, 142, 130);
+}
+nav ul li a:hover{
+   border-bottom: 2px solid rgb(255, 142, 130);
+} */
+header .hedd{
+    top: 200px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+header .hedd img{
+    height: 250px;
+    padding: 20px 0;
+}
+section {
+    background-color: rgb(230, 230, 230);
+}
+section h5{
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Josefin Sans',sans-serif;
+}
+section p{
+    text-align: justify;
+    width: 700px;
+    margin: 0 auto;
+    font-family: 'Josefin Sans',sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    text-indent: 50px;
+}
+section .iten{
+    font-family: 'Ms Madi',cursive;
+    font-size: 40px;
+    color: rgb(255, 142, 130);
+    
+}
+section.rupe{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+section.rupe img{
+    width: 400px;
+    padding: 20px 5px;
+}
+.contact{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   
+}
+.contact label,.contact input{
+    display: block;
+}
+.contact label{
+    color: rgb(124, 121, 121);
+}
+.contact input{
+    width: 500px;
+    height: 40px;
+    margin: 10px 0;
+    border: 1px solid rgb(255, 142, 130);
+    border-radius: 10px;
+    color: rgb(124, 121, 121);
+}
+.contact input:focus{
+   outline: none;
+   border-left:3px solid rgb(255, 142, 130);
+   border-right:3px solid rgb(255, 142, 130);
+}
+.contact textarea{
+    border:1px solid rgb(255, 142, 130) ;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 500px;
+}
+.contact textarea:focus{
+    outline: none;
+    border-left:3px solid rgb(255, 142, 130);
+   border-right:3px solid rgb(255, 142, 130);
+}
+.contact button{
+    display: block;
+    background-color:rgb(255, 142, 130) ;
+    outline: none;
+    border: none;
+    color:#fff;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20 auto;
+    cursor: pointer;
+}
+.contact button:hover{
+    background-color:rgb(202, 105, 94);
+}
+footer p{
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    color: rgb(151, 146, 146);
+}
+div.porto div h4{
+    font-family: 'Ms Madi',cursive;
+    font-size: 20px;
+    margin-top: -25px;
+}
+div.porto div.foto{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.porto div.foto img{
+    width: 600px;
+    padding:6px;
+    box-sizing: border-box;
+}
+div.porto div.foto img.full{
+    width: 1200px;
+}
+div.pelayanan .pelayanan-text div{
+    padding: 40px 0;
+}
+div.pelayanan .pelayanan-text span{
+    display: block;
+}
+div.pelayanan .pelayanan-text span.headee{
+    font-size: 20px;
+    color: rgb(255, 142, 130);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+}
+div .fotpel{
+    background:linear-gradient(to top, rgb(255, 142, 130),white);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin: 80px 0;
+}
+div .fotpel a{
+    background-color: #fff;
+    color:rgb(255, 142, 130) ;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+div .fotpel a:hover{
+    background-color: rgb(255, 142, 130);
+    color: #fff;
+}
+div.kontak .konhed{
+    display: flex;
+    width: 100%;
+    margin: 100px 0;
+    justify-content: center;
+
+}
+div.kontak .konhed .sub{
+    width: 600px;
+    height: 500px;
+    box-shadow: 0 0 2px 1px rgba(100, 96, 96, 0.384);
+}
+div.kontak .konhed .sub span{
+    display: block;
+}
+div.kontak .konhed .sub span.head{
+    font-family: 'Dancing Script',cursive;
+    font-size: 35px;
+    color: rgb(255, 142, 130);
+    text-align: center;
+    padding: 40px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+div.kontak .konhed .sub span.subhead{
+    text-align: center;
+    padding: 0 40px;
+    font-size: 20px;
+}
+div.kontak .konhed .sub span.fotkon{
+    font-family: 'Dancing Script',cursive;
+    font-size: 25px;
+    color: rgb(255, 142, 130);
+    text-align: center;
+    padding: 40px;
+    font-weight: 500;
+}
+div.kontak .konhed .kon-img{
+    width: 400px;
+    height:600px;
+    background: url(../fix/img/pelay/photos-by-lanty-rfS6oq6MWlU-unsplash.jpg);
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+}
+div.kontak .konhed .acces{
+    height: 500px;
+    width: 150px;
+    background:linear-gradient(to left, rgba(255, 143, 130, 0.781),#fff)
+}
+
+.contact .login{
+    position:absolute;
+    top: -460;
+    background-color: #fff;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.contact .login .header{
+    position: absolute;
+    color: rgb(145, 141, 141);
+}
+.contact .login .form{
+    position: relative;
+    top: 60px;
+}
+
+.flashdata{
+    background-color: rgb(236, 98, 98);
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(248, 248, 248);
+    font-family: 'Roboto Consenden',sans-serif;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}

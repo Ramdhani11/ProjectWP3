@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="neww/logo.svg" alt=""></div>
+            <div class="nav">
+                <ul>
+                    <li><a class="active" href="home.html">Home</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Pelayanan</a></li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hedd">
+            <img src="neww/Main.svg" alt="">
+        </div>
+    </header>
+    <section>
+        <h5>Selamat Datang</h5>
+        <p>
+            Wise Wedding,<span class="iten">Wedding Planner</span>.Kami adalah solusi untuk anda yang sedang pusing untuk recana pernikahan.Kami ada untuk anda dengan team kami yang sudah profesional,Percayakan acara pernikahan kepada kami.
+        </p>
+        <h5>Kontak Kami</h5>
+        <div class="contact">
+            <form action="" method="post">
+                <div>
+                    <label for="nama">Nama</label>
+                    <input type="text" name="" id="nama">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email">
+                </div>
+                <div>
+                    <label for="telp">No Telpon</label>
+                    <input type="number" name="" id="telp">
+                </div>
+                <div>
+                    <label for="buget">Budget</label>
+                    <input type="number" name="" id="buget" placeholder="Rp.">
+                </div>
+                    <label for="req">Request</label>
+                    <textarea name="" id="req" cols="30" rows="10"></textarea>
+                <button type="submit">
+                    Kirim
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="rupe">
+        <div class="imgg">
+            <img src="img/pexels-edward-eyer-1045541.jpg" alt="">
+        </div>
+        <div class="imgg">
+            <img src="img/pexels-rene-asmussen-1345574.jpg" alt="">
+        </div>
+        <div class="imgg">
+            <img src="img/pexels-terje-sollie-313707.jpg" alt="">
+        </div>
+        
+    </section>
+    <footer style="width: 100%;">
+        <p style="text-align: center;">&copy;2022 Wise Wedding | Project Kelompok 1 WP</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("black");
+            } else {
+                $("nav").removeClass("black");
+            }
+        })
+    </script>
+</body>
+
+</html>

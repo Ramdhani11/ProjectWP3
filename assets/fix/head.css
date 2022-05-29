@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(img/porto/9.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* nav a{
+    text-decoration: none;
+    color: rgb(255, 142, 130);
+    font-family: sans-serif;
+    line-height: 50px;
+    float: right;
+    margin-right: 50px;
+    position: relative;
+}
+nav::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    color: rgb(255, 142, 130);
+    position: absolute;
+} */
+/* nav ul {
+    list-style: none;
+    position: absolute;
+}
+nav ul li{
+    position: relative;
+    right: 0;
+    display: flex;
+    justify-content: end;   
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 142, 130);
+    position: absolute;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: ;
+} */
+/* nav a{
+    color: rgb(255, 142, 130);
+    line-height: 50px;
+    display: flex;
+    width: 50px;
+    float: right;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 40px;
+    position: relative;
+}
+nav a::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color:rgb(255, 142, 130) ;
+    position: absolute;
+    top: 34px;
+    transition: .5s;
+}
+nav a:hover::after{
+    width: 100%;
+} */
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+
+}
+header nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+header nav ul li.active::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color:rgb(255, 142, 130) ;
+    left: 0;
+    transition: .4s;
+    top: 23px;
+}
+header nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color:rgb(255, 142, 130) ;
+    left: 0;
+    transition: .4s;
+    top: 23px;
+}
+header nav ul li:hover::after{
+    width: 100%;
+}
+header nav ul li:last-child{
+    margin-right: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+    color:rgb(255, 142, 130) ;
+}
+.head{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.692);
+    position: relative;
+    top: 200px;
+    font-family: 'Ms Madi',cursive;
+    font-size: 50px;
+    line-height: 300px;
+    text-align: center  ;
+}
+.informasi{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+.informasi .akun{
+    width: 400px;
+    height: 130px;
+    font-family:'Poppins', sans-serif;
+}
+.informasi .akun h3{
+    font-size: 15px;
+}
+.informasi .akun table{
+    font-size: 13px;
+}
+.informasi .datee{
+    position: absolute;
+    top: 0;
+    left: 450px;
+}
+.informasi ul {
+    list-style: none;
+}
+.informasi ul li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(185, 185, 185);
+    font-size:15px;
+    text-align: center;
+}
+.informasi input{
+   outline: none;
+   border: none;
+   width: 400px;
+   border: 1px solid rgb(255, 142, 130);
+   height: 30px;
+   border-radius: 5px;
+   position: relative;
+   left: 130px;
+}
+.informasi button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    color: #fff;
+    background-color: rgb(255, 142, 130);
+    position: relative;
+   left: 130px;
+}
+.informasi .pemesanan div{
+    font-family: 'Poppins',sans-serif;
+    margin-top: 20px;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    padding: 5px;
+}
+.informasi .pemesanan div a{
+    text-decoration: none;
+    color: rgb(255, 142, 130);
+}
+.pilihan{
+    width: 85%;
+    margin: 10px auto;
+}
+.pilihan span{
+    font-family: 'Ms Madi',cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.pilihan .body-header{
+    height: 40px;
+    background-image:linear-gradient(to right,rgb(255, 142, 130),#fff);
+    display: flex; 
+    align-items: center;
+    color: #fff;
+    padding-left: 20px;
+    border-radius: 5px 0 0 5px;
+}
+.pilihan .body-header i{
+    line-height: 40px;
+    padding-right:5px ;
+}
+.pilihan .body-header h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+}
+/* .pilihan h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(255, 142, 130);
+    display: block;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+} */
+footer p{
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    color: rgb(151, 146, 146);
+    z-index:1;
+}
+.flex{
+    display: flex;
+}
+.conten{
+    border: 1px solid rgb(255, 142, 130);
+    width: 280px;
+    margin: 10px 5px;
+    position: relative;
+}
+.fotorias img{
+    display: flex;
+    position: relative;
+    left: 50px;
+    margin: 2px 0;
+}
+.fotodekorasi img{
+    display: flex;
+    width: 270px;
+    margin: 10px 5px;
+}
+.fotodok img{
+    width: 260px;
+    margin: 5px 10px;
+}
+.conten h4{
+    text-align: center;
+    font-family: 'Ms Madi',cursive;
+    font-size: 20px;
+}
+.conten .fotdes{
+
+    height: 120px;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 13px;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 300;
+}
+.conten .harga{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 40px;
+    margin-top: -26px;
+    border: 1px solid rgb(255, 142, 130);
+    width: 150px;
+    padding: 3px;
+    border-radius: 4px 0 0 4px;
+}
+.conten .radio-btn{
+    width: 60px;
+    height: 20px;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 120px;
+    left: 170px;
+    display: block;
+    cursor: pointer;
+}
+.conten .radio-btn input{
+    display: none;
+}
+
+.conten .radio-btn .check{
+    width:260px;
+    height: 40px;
+    background-color: rgba(255, 143, 130, 0.486);
+    display: block;
+    position: absolute;
+    top: -180px;
+    right: -40px;
+    display: none;
+}
+.conten .radio-btn input:checked + .check{
+    display: block;
+}
+.conten .pil{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgb(255, 142, 130);
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 6px;
+}
+.subb{
+    display: flex;
+    border: 1px solid rgb(255, 142, 130);
+    height: 40px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.subb p{
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(87, 85, 85);
+}
+.subb button{
+    font-family: 'Poppins',sans-serif;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    height: 30px;
+    width: 80px;
+    line-height: 20px;
+    margin-left: 15px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(255, 142, 130);
+    cursor: pointer;
+}
+.errors span{
+    display: flex;
+    background-color: rgb(255, 153, 153);
+
+    color:#fff;
+    font-family: 'Poppins',sans-serif;
+    justify-content: space-around;
+    
+}
+/* Detail */
+.detail {
+    position: relative;
+    top: 50px;
+    width: 70%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.986);
+    margin: 0 auto;
+}
+.detail h2{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    color: rgb(255, 142, 130);
+}
+.detail table.main{
+    margin: 0 auto;
+    width: 600px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.detail table.main thead tr{
+    height: 40px;
+}
+.detail table.main tbody td{
+    width: 150px;
+    font-family: 'Poppins',sans-serif;
+    padding: 2px 10px;
+}
+.detail table.main th{
+    background-color: rgb(255, 142, 130);
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    text-align: start;
+    padding: 2px 10px ;
+    font-weight: 400;
+}
+.detail table.main tbody tr:nth-of-type(even){
+    background-color: rgb(228, 228, 228);
+}
+.detail table.main tbody tr:last-child td:first-child{
+    text-align: end;
+}
+.detail table.main tbody tr{
+    width: 30px;
+}
+.detail table.informasi{
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    left: 100px;
+    margin-bottom: 20px;
+}
+.detail table.informasi tr td:last-child{
+    padding-left: 10px;
+}
+.detail table.informasi tr td:first-child{
+    padding-right: 10px;
+}
+.detail .detbut{
+    display: flex;
+    justify-content: center;
+}
+.detail .detbut a{
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 25px;
+    border: 2px solid rgb(255, 142, 130);
+    color: rgb(255, 142, 130);
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    left: 190px;
+    transition: .2s;
+}
+.detail .detbut a:hover{
+    background-color: rgb(255, 142, 130);
+    color: #fff;
+    border: none;
+    height: 27px;
+}
+.detail .detbut a:first-child{
+    margin-right: 10px;
+    color: #ccc;
+    border: 2px solid #ccc;
+}
+.detail .detbut a:first-child:hover{
+    background-color: #ccc;
+    color: #fff;
+}
+/* Konfirmasi */
+.konfirmasi {
+    position: relative;
+    top: 50px;
+    width: 70%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.986);
+    margin: 0 auto;
+}
+.konfirmasi h2{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    color: rgb(255, 142, 130);
+}
+.konfirmasi {
+    font-family: 'Poppins',sans-serif;
+}
+.konfirmasi .user_form{
+    margin: 0 auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+.konfirmasi .user_form tr td input[type = "text"]{
+    outline: none;
+    border: 1px solid rgb(255, 142, 130);
+    width: 500px;
+    margin-top: 20px;
+    font-size: 1rem;
+    height:30px ;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+.konfirmasi .user_form tr td input[type = "number"]{
+    outline: none;
+    border: 1px solid rgb(255, 142, 130);
+    width: 500px;
+    margin-top: 20px;
+    font-size: 1rem;
+    height:30px ;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+.konfirmasi .user_form tr td input[type ="file"]{
+    display: none;
+    width: 200px;
+}
+.konfirmasi .user_form tr.bukti{
+    position: relative;
+    top: 20px;
+}
+.konfirmasi .user_form tr td label{
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid rgb(255, 142, 130);
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    color: rgb(255, 142, 130);
+}
+.konfirmasi .user_form tr td label:hover{
+    background-color: rgb(255, 142, 130);
+    color: #fff;
+}
+.konfirmasi .user_form tr:last-child td button{
+    outline: none;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+    width: 500px;
+    height: 30px;
+    background-color: rgb(255, 142, 130);
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.konfirmasi .user_form tr:last-child td button:hover{
+    background-color: rgb(255, 114, 98);
+}
+.konfirmasi .user_form tr:first-child td span{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 142, 130);
+}
+.konfirmasi .informasi{
+    position: relative;
+    padding-bottom: 40px;
+    left: 150px;
+}
+.konfirmasi .informasi tr td{
+    font-size: 1rem;
+    line-height: 15px;
+}
+.pesan{
+    background-color: rgb(150, 255, 150);
+    height: 40px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    font-size: .9rem;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(0, 88, 0);
+    top: -20px;
+}
