@@ -291,16 +291,26 @@ class Edit extends CI_Controller
     }
     public function edit_pemesanan($id)
     {
-        $data['pemesanan'] = $this->db->get_where('pemesanan', ['id_pemesanan' => $id])->row_array();
-        $id_pelanggan = $data['pemesanan']['id_pelanggan'];
+        // $data['pemesanan'] = $this->db->get_where('pemesanan', ['id_pemesanan' => $id])->row_array();
+        // $id_pelanggan = $data['pemesanan']['id_pelanggan'];
+        // $data_pemesanan = [
+        //     'id_pemesanan' => $id,
+        //     'id_pelanggan' => $id_pelanggan,
+        //     'tgl_booking' => $data['pemesanan']['tgl_booking'],
+        //     'status' => $this->input->post('status')
+        // ];
+        // echo $data_pemesanan;
+        // // $this->db->update('pemesanan', $data, ['id_pemesanan' => $id]);
+        // // redirect('admin/edit/pemesanan/' . '13');
+        $new = $this->db->get_where('pemesanan', ['id_pemesanan' => $id])->row_array();
         $data = [
             'id_pemesanan' => $id,
-            'id_pelanggan' => $data['pemesanan']['id_pelanggan'],
-            'tgl_booking' => $data['pemesanan']['tgl_booking'],
+            'id_pelanggan' => $new['id_pelanggan'],
+            'tgl_booking' => $id,
             'status' => $this->input->post('status')
         ];
         $this->db->update('pemesanan', $data, ['id_pemesanan' => $id]);
-        redirect('admin/edit/pemesanan/' . $id_pelanggan);
+        redirect('admin/edit/pemesanan/' . $new['id_pelanggan']);
     }
     public function pembayaran($id)
     {
